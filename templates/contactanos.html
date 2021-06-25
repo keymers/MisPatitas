@@ -1,0 +1,93 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/estilo_contactanos.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js" integrity="sha512-6Uv+497AWTmj/6V14BsQioPrm3kgwmK9HYIyWP+vClykX52b0zrDGP7lajZoIY1nNlX4oQuh7zsGjmF7D0VZYA==" crossorigin="anonymous"></script>
+    <title>Contactanos</title>
+</head>
+<body>
+    <div class="container_contactanos">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt="logo">
+                </div>
+            <ul>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                    <li><a href="{% url 'servicios' %}">Servicios</a></li>
+                    <li><a href="{% url 'quienes_somos' %}">Quienes Somos</a></li>
+                    <li><a href="{% url 'contactanos' %}">Contacto</a></li>
+                <li><h1>Mis Patitas</h1></li>
+              </ul>
+            </div>
+
+            <div class="contacto">
+                <form method="GET" id="contacto">
+                    <div class="form-group">
+                      <label for="id_txtNombre">Nombre</label>
+                      <input type="text" class="form-control required" name="txtNombre" id="id_txtNombre" value="" placeholder="Nombre Completo">
+                    </div>
+                    <div class="form-group">
+                      <label for="id_txtCorreo">Correo</label>
+                      <input type="email" class="form-control" name="txtCorreo" id="id_txtCorreo" required="" value="" placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="consulta">
+                        <label for="id_txtConsulta">Consulta</label>
+                        <p></p>
+                        <textarea rows="4" cols="40" name="txtEscriba" id="id_txtEscriba" required="" placeholder="Escriba su consulta..."></textarea>
+                      </div>
+                      <p></p>
+                      <form action="">
+                        <button type="submit" onclick="messageConsultaEnviada()" class="btn btn-primary btn-lg" name="btnEnviar" id="submit-form">Enviar</button>
+                      </form>
+                        
+                      
+                  </form>
+                  <br></br>
+            </div>
+
+            <div class="footer">
+
+                <div class="redes">
+                    <p>
+                        <b>Siguenos</b>
+                    </p>
+                    <a href="https://www.facebook.com/Mis-Patitas-104129001797633" target="_blank"><img
+                            src="{% static 'images/s-facebook.png' %}" alt="facebook"></a>
+                    <a href="https://twitter.com/mis_patitas" target="_blank"><img src="{% static 'images/s-twitter.png' %}" alt="twitter"></a>
+                    <a href="https://www.instagram.com/mispatitas1234/ " target="_blank"><img
+                            src="{% static 'images/s-instagram.png' %}" alt="instagram"></a>
+                </div>
+        
+                <div class="fono">
+                    <p>
+                        <b>Llamanos</b>
+                    </p>
+                    <img src="{% static 'images/whatsapp.png' %}" alt="fono">
+                    <b>+56 9 98765431</b>
+                </div>
+            </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+
+    <script src="{% static 'js/contactanos/validacion.js' %}"></script>
+    <script src="{% static 'js/contactanos/consulta_enviada.js' %}"></script>
+    
+
+</body>
+</html>

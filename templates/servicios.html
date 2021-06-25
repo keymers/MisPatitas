@@ -1,0 +1,114 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/estilo_servicios.css' %}">
+    <title>Servicios</title>
+</head>
+
+<body>
+    <div class="container_servicios">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="{% url 'index' %}">Inicio</a></li>
+                    <li><a href="{% url 'servicios' %}">Servicios</a></li>
+                    <li><a href="{% url 'quienes_somos' %}">Quienes Somos</a></li>
+                    <li><a href="{% url 'contactanos' %}">Contacto</a></li>
+                    <li><h1>Mis Patitas</h1></li>
+                </ul>
+
+            </div>
+
+            <div>
+                <div class="consulta_vet">
+                    <h2 class="bg-dark text-white">Consulta Veterinaria</h2>
+                    <p>La consulta general veterinaria, es la base para la prevención y detección de problemas en
+                        nuestros perros o gatos, sobretodo porque estos no nos pueden indicar sus problemas. ... En una
+                        consulta general veterinaria, el veterinario revisa los principales órganos y variables de la
+                        mascota.</p>
+                </div>
+                <div class="cirugia">
+                    <h2 class="bg-dark text-white">Cirugia</h2>
+                    <img src="{% static 'images/cirugia.png' %}" alt="cirugia">
+                    <p>La cirugía es una especialidad médica que utiliza técnicas manuales e
+                        instrumentales operativas en
+                        un paciente, con el objetivo de investigar o tratar enfermedades o lesiones. El objetivo de la
+                        cirugía es mejorar la función de los órganos y restaurar la salud. Al acto de realizar una
+                        cirugía
+                        se le puede llamar también procedimiento quirúrgico u operación, que puede ser efectuado a una
+                        persona o un animal. La duración dependerá del asunto a tratar, pudiendo ser de minutos a horas.
+                    </p>
+                </div>
+                <div class="dentista">
+                    <h2 class="bg-dark text-white">Dentista</h2>
+                    <img src="{% static 'images/dentista.jpg'%}" alt="dentista">
+                    <p>La Odontología Veterinaria es una especialidad, que tiene como objetivo identificar y tratar
+                        enfermedades en la cavidad oral de las mascotas.
+
+                        Las patologías bucales y dentales en caninos y felinos son muy variadas y frecuentes siendo
+                        primarias propias de la boca o secundarias como consecuencia de enfermedades generales
+                        originadas en otras partes del organismos que manifiestan signos en la cavidad bucal.</p>
+                </div>
+                <div class="peluqueria">
+                    <h2 class="bg-dark text-white">Peluqueria</h2>
+                    <img src="{% static 'images/peluqueria.png'%}" alt="Consulta">
+                    <p>Los peluqueros caninos son profesionales especializados en higiene y estética que tienen como
+                        objetivo preservar la salud de las mascotas. No se trata solo de cumplir una función estética,
+                        sino de cuidar la higiene de la manera más óptima posible para ofrecerle mejores cuidados y
+                        mejorar su calidad de vida. En la estética canina no solo mejora el aspecto físico del animal,
+                        sino que existen también ciertas razones médicas. </p>
+                </div>
+
+
+
+            </div>
+
+            <div class="footer">
+
+                <div class="redes">
+                    <p>
+                        <b>Siguenos</b>
+                    </p>
+                    <a href="https://www.facebook.com/Mis-Patitas-104129001797633" target="_blank"><img
+                            src="{% static 'images/s-facebook.png' %}" alt="facebook"></a>
+                    <a href="https://twitter.com/mis_patitas" target="_blank"><img src="{% static 'images/s-twitter.png' %}"
+                            alt="twitter"></a>
+                    <a href="https://www.instagram.com/mispatitas1234/ " target="_blank"><img
+                            src="{% static 'images/s-instagram.png' %}" alt="instagram"></a>
+                </div>
+
+                <div class="fono">
+                    <p>
+                        <b>Llamanos</b>
+                    </p>
+                    <img src="{% static 'images/whatsapp.png'%}" alt="fono">
+                    <b>+56 9 98765431</b>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+
+.header{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    text-align: center;
+} 
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 85%;
+    flex-direction: row;
+    text-align: center;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+ul h1{
+    color: bisque;
+    text-align: center;
+    
+}
+
+ul li{
+    flex: 20%;
+}
+
+
+.logo img{
+    width: 75%;
+    height: 75%;
+    float: left;
+    margin: auto;
+    
+}
+.logo{
+    width: 15%;
+    height: 100%;
+    padding: 20px;
+}
+
+.navegacion{
+    float: right;
+}
+
+.carrusel_index{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item p{
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+.footer {
+    background-color: lightblue;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.carrusel_index{
+    width: auto;
+    height: 50%;
+}
+
+.fono{
+    text-align: right;
+    padding: 10px;
+    float: right;
+}
+
+.fono img{
+    justify-content: center;
+}
+
+.redes{
+    width: 70%;
+    float: left;
+}
+
+.redes a{
+    justify-content: center;
+}
+
+
+.contacto{
+    width: 40%;
+    height: 40%;
+}
+#formGroupExampleInput3{
+    height: 200px;
+}
+
+
+@media screen and (max-width:992px) {
+    .header {
+        flex-direction: row;
+        height: 120px;
+
+    }
+    
+
+    ul h1{
+        text-align: end;
+        padding: 10px;
+    }
+
+
+    
+}
+
+@media screen and (max-width:767px) {
+    .header {
+        flex-direction: row;
+        height: 120px;
+
+    }
+    
+
+    ul h1{
+        text-align: end;
+        padding: 10px;
+    }
+
+    
+}
+
+@media screen and (max-width:767px) {
+    .title{
+        display: flex;
+        font-size: 25px;
+    }
+
+    .header{
+        display: flex;
+    }
+    
+    .header a{
+        width: 10%;
+        vertical-align: bottom;
+        font-size: 15px;
+    }
+    .fono{
+        width: 40%;
+    }
+    .redes{
+        width: 40%;
+    }
+
+    li h1{
+        height: 40px;
+        font-size: 20px;
+    }
+
+    ul li{
+        width: 20%;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+
+    .logo{
+        padding: 8px;
+    }
+    
+    
+}

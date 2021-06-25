@@ -1,0 +1,306 @@
+
+.cirugia{
+    background-color: palegoldenrod;
+    border : 5px solid rgb(236, 224, 83);
+    height: 380px;
+    padding: 10px;
+}
+.cirugia img{
+    float: left;
+}
+.cirugia p{
+    text-align: center;
+    justify-content: center;
+}
+
+.dentista{
+    background-color: cadetblue;
+    border : 5px solid rgb(46, 164, 168);
+    height: 410px;
+    padding: 10px;
+}
+.dentista img{
+    float: right;
+}
+.dentista p{
+    text-align: center;
+}
+.peluqueria{
+    background-color: pink;
+    border : 5px solid rgb(189, 108, 121);
+    height: 380px;
+    padding: 10px;
+}
+
+.peluqueria img{
+    float: left;
+}
+
+.peluqueria p{
+    text-align: center;
+}
+
+.consulta_vet{
+    text-align: left;
+}
+
+
+.header{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    text-align: center;
+} 
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 85%;
+    flex-direction: row;
+    text-align: center;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+ul h1{
+    color: bisque;
+    text-align: center;
+    
+}
+
+ul li{
+    flex: 20%;
+}
+
+
+.logo img{
+    width: 75%;
+    height: 75%;
+    float: left;
+    margin: auto;
+    
+}
+.logo{
+    width: 15%;
+    height: 100%;
+    padding: 20px;
+}
+
+.navegacion{
+    float: right;
+}
+
+.carrusel_index{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item p{
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+.footer {
+    background-color: lightblue;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.carrusel_index{
+    width: auto;
+    height: 50%;
+}
+
+.fono{
+    text-align: right;
+    padding: 10px;
+    float: right;
+}
+
+.fono img{
+    justify-content: center;
+}
+
+.redes{
+    width: 70%;
+    float: left;
+}
+
+.redes a{
+    justify-content: center;
+}
+
+@media screen and (max-width:992px) {
+    .header {
+        flex-direction: row;
+        height: 120px;
+
+    }
+    .title{
+        text-align: left;
+    }
+    
+
+    ul h1{
+        text-align: end;
+        padding: 10px;
+    }
+
+    
+}
+
+@media screen and (max-width:767px) {
+    .title{
+        display: flex;
+        font-size: 25px;
+    }
+
+    .header{
+        display: flex;
+    }
+    
+    .header a{
+        width: 10%;
+        vertical-align: bottom;
+        font-size: 15px;
+    }
+    .fono{
+        width: 40%;
+    }
+    .redes{
+        width: 40%;
+    }
+
+    li h1{
+        height: 40px;
+        font-size: 20px;
+    }
+
+    ul li{
+        width: 20%;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+
+    .logo{
+        padding: 8px;
+    }
+
+
+
+
+@media screen and (max-width:992px) {
+    .header {
+        flex-direction: row;
+        height: 120px;
+
+    }
+    
+
+    ul h1{
+        text-align: end;
+        padding: 10px;
+    }
+    .title{
+        text-align: left;
+    }
+    .logo img{
+        display: none;
+    }
+
+    .cirugia{
+        height: 400px;
+    }
+
+    .dentista{
+        height: 300px;
+    }
+    
+    .dentista img{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    
+    li h1{
+        height: 40px;
+        font-size: 20px;
+    }
+    .redes{
+        width: 40%;
+    }
+
+    li h1{
+        height: 40px;
+        font-size: 20px;
+    }
+
+    ul li{
+        width: 20%;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+
+    .logo{
+        padding: 8px;
+     width: 40%;}
+
+    }
+    .cirugia{
+        height: 370px;
+    }
+    .cirugia img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .dentista{
+        height: 350px;
+    }
+    
+    .dentista img{
+        height: 200px;
+        width: 200px;
+    }
+    .peluqueria{
+        height: 350px;
+    }
+    .peluqueria img{
+        width: 200px;
+        height: 200px;
+    }
+    .peluqueria p{
+        text-align: right;
+    }
+
+}
+

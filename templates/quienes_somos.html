@@ -1,0 +1,78 @@
+{% load static %} 
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/estilo_quienes_somos.css' %}">
+    <title>Quienes Somos</title>
+</head>
+
+<body>
+    <div class="container_quienes_somos">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt="logo">
+                </div>
+                
+            <ul>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                    <li><a href="{% url 'servicios' %}">Servicios</a></li>
+                    <li><a href="{% url 'quienes_somos' %}">Quienes Somos</a></li>
+                    <li><a href="{% url 'contactanos' %}">Contacto</a></li>
+                <li><h1>Mis Patitas</h1></li>
+              </ul>
+            </div>
+
+            <h2>¿Quienes Somos?</h2>
+
+            <div class="historia">
+                <img src="{% static 'images/nosotros.png' %}" alt="nosotros">
+                <p>Mis patitas es una nueva clinica veterinaria, la cual consta con los mejores profesionales que estan
+                    capacitados para que puedan resolver cualquier problema o necesidad que tenga tu mascota.
+                </p>
+                <p>Nuestra mision es tener una gran cobertura a lo largo del pais para poder cuidar a todos sus animalitos.</p>
+
+                
+            </div>
+
+            <div>
+                <h1>Ven a visitarnos!</h1>
+                <p></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13709.309103550006!2d-70.70034102552577!3d-33.429554502110065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x486820b9cd346891!2sConsultorio%20Veterinario!5e0!3m2!1ses!2scl!4v1621538160055!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="footer">
+
+                <div class="redes">
+                    <p>
+                        <b>Siguenos</b>
+                    </p>
+                    <a href="https://www.facebook.com/Mis-Patitas-104129001797633" target="_blank"><img
+                            src="{% static 'images/s-facebook.png' %}" alt="facebook"></a>
+                    <a href="https://twitter.com/mis_patitas" target="_blank"><img src="{% static 'images/s-twitter.png' %}" alt="twitter"></a>
+                    <a href="https://www.instagram.com/mispatitas1234/ " target="_blank"><img
+                            src="{% static 'images/s-instagram.png' %}" alt="instagram"></a>
+                </div>
+
+                <div class="fono">
+                    <p>
+                        <b>Llamanos</b>
+                    </p>
+                    <img src="{% static 'images/whatsapp.png'%}" alt="fono">
+                    <b>+56 9 98765431</b>
+                </div>
+            </div>
+        </div>
+
+
+
+
+</body>
+
+</html>

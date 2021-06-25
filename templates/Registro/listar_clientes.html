@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Listar clientes</title>
+  </head>
+
+  <body>
+    <h2>Lista de clientes</h2>
+
+    {% for c in clientes %}
+        <div>
+            <p> Nombre: {{ c.nombre }} </p>
+            <p>peso: {{ c.peso }} </p>
+            <p>estatura $ {{ c.estatura }} </p>
+            <p>edad $ {{ c.edad }} </p>
+            <p>especie $ {{ c.especie }} </p>
+        </div>
+        <br>
+    {% endfor %}
+
+  </body>
+</html>

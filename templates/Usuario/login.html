@@ -1,20 +1,10 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 
 {% load static %}
 
-{% block title %}
-Registro
-{% endblock %}
+{% block content %} 
 
-{% block head %}
-<link rel="stylesheet" href="{% static 'css/registro.css' %}" type="text/css">
-{% endblock %}
-
-{% block header %}
-{% endblock %}
-
-{% block content %}
-<div id="registro" class="container">
+<div id="login" class="container">
     <h1 class="display">Login</h1><br>
     <form method="POST" id="formulario">
         {% csrf_token %}
@@ -45,4 +35,5 @@ Registro
         
     </form>
 </div>
-{% endblock %}
+
+    {% endblock content %}  

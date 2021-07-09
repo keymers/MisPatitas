@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Listar clientes</title>
-  </head>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
 
   <body>
     <h2>Lista de clientes</h2>
 
     {% for c in clientes %}
-        <div>
-            <p> Nombre: {{ c.nombre }} </p>
-            <p>peso: {{ c.peso }} </p>
-            <p>estatura $ {{ c.estatura }} </p>
-            <p>edad $ {{ c.edad }} </p>
-            <p>especie $ {{ c.especie }} </p>
+        <div style="border: darkcyan 2px solid;">
+            <p style="padding-left: 20px;">  Nombre: {{ c.nombre }} </p>
+            <p style="padding-left: 20px;">  Peso: {{ c.peso }} kg</p>
+            <p style="padding-left: 20px;">  Estatura {{ c.estatura }} cm</p>
+            <p style="padding-left: 20px;">  Edad {{ c.edad }} años</p>
+            <p style="padding-left: 20px;">  Especie {{ c.especie }} </p>
         </div>
         <br>
     {% endfor %}
 
   </body>
-</html>
+
+{% endblock content %}

@@ -17,29 +17,40 @@
             <div class="logo">
                 <img src="{% static 'images/logo.png' %}" alt="logo">
             </div>
-            <!-- <h1 class="title">Mis Patitas</h1>
-            <p></p>
-            <nav class="navbar navbar-light bg-transparent">
-                <a class="navbar-brand" href="./index.html">Inicio</a>
-            </nav>
-            <nav class="navbar navbar-light bg-transparent">
-                <a class="navbar-brand" href="./paginas_nav_index/servicios.html">Servicios</a>
-            </nav>
-            <nav class="navbar navbar-light bg-transparent">
-                <a class="navbar-brand" href="./paginas_nav_index/quienes_somos.html">Quienes Somos</a>
-            </nav>
-            <nav class="navbar navbar-light bg-transparent">
-                <a class="navbar-brand" href="./paginas_nav_index/contactanos.html">Contacto</a>
-            </nav> -->
 
             <ul>
+                <div class="login">
+                    {% if not user.is_authenticated %}
+                    <div style="background-color: #333;" class="col-sm btn-info"><a href="{% url 'login' %}">Iniciar Sesión</a></div>
+                    {% endif %}
+                    <div class="nav">
+                        {% if user.is_authenticated %}
+                            {% if user.is_superuser %}
+                                <div style="width: 33%;" style="background-color: #333;" class="col-sm btn-info"><a href="{% url 'listar_clientes' %}">Listar usuarios</a></div>
+                            {% endif %}
+
+                            <div class="col-sm btn-info" style="width: 33%;" style="background-color: #333;"><a href="{% url 'logout' %}">Cerrar sesión</a></div>
+                            <div class="col-sm btn-info" style="width: 33%;" style="background-color: #333;"> Usuario: {{ user.get_username }} </div>
+                        {% endif %}
+                    </div>
+                </div>
                 <li><a href="{% url 'index' %}">Inicio</a></li>
                 <li><a href="{% url 'servicios' %}">Servicios</a></li>
                 <li><a href="{% url 'quienes_somos' %}">Quienes Somos</a></li>
                 <li><a href="{% url 'contactanos' %}">Contacto</a></li>
-                <li><a href="{% url 'agregar_cliente' %}">Registrar Mascota</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Registro
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{% url 'agregar_cliente' %}">Agregar Cliente</a>
+                        <a class="dropdown-item" href="#">Editar Cliente</a>
+                        <a class="dropdown-item" href="#">Borrar Cliente</a>
+                    </div>
+                </li>
+                
                 <li><h1>Mis Patitas</h1></li>
-              </ul>
+            </ul>
         </div>
         <h2>Reseña de Cliente</h2>
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">

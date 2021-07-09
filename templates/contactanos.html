@@ -1,3 +1,4 @@
+
 {% load static %}
 
 <html lang="en">
@@ -20,38 +21,38 @@
                 <div class="logo">
                     <img src="{% static 'images/logo.png' %}" alt="logo">
                 </div>
-            <ul>
-                <li><a href="{% url 'index' %}">Inicio</a></li>
-                    <li><a href="{% url 'servicios' %}">Servicios</a></li>
-                    <li><a href="{% url 'quienes_somos' %}">Quienes Somos</a></li>
-                    <li><a href="{% url 'contactanos' %}">Contacto</a></li>
-                <li><h1>Mis Patitas</h1></li>
-              </ul>
+                <ul>
+                    <li><a href="{% url 'index' %}">Inicio</a></li>
+                        <li><a href="{% url 'servicios' %}">Servicios</a></li>
+                        <li><a href="{% url 'quienes_somos' %}">Quienes Somos</a></li>
+                        <li><a href="{% url 'contactanos' %}">Contacto</a></li>
+                    <li><h1>Mis Patitas</h1></li>
+                </ul>
             </div>
 
             <div class="contacto">
                 <form method="GET" id="contacto">
                     <div class="form-group">
-                      <label for="id_txtNombre">Nombre</label>
-                      <input type="text" class="form-control required" name="txtNombre" id="id_txtNombre" value="" placeholder="Nombre Completo">
+                        <label for="id_txtNombre">Nombre</label>
+                        <input type="text" class="form-control required" name="txtNombre" id="id_txtNombre" value="" placeholder="Nombre Completo">
                     </div>
                     <div class="form-group">
-                      <label for="id_txtCorreo">Correo</label>
-                      <input type="email" class="form-control" name="txtCorreo" id="id_txtCorreo" required="" value="" placeholder="correo@ejemplo.com">
+                        <label for="id_txtCorreo">Correo</label>
+                        <input type="email" class="form-control" name="txtCorreo" id="id_txtCorreo" required="" value="" placeholder="correo@ejemplo.com">
                     </div>
                     <div class="consulta">
                         <label for="id_txtConsulta">Consulta</label>
                         <p></p>
                         <textarea rows="4" cols="40" name="txtEscriba" id="id_txtEscriba" required="" placeholder="Escriba su consulta..."></textarea>
-                      </div>
-                      <p></p>
-                      <form action="">
+                    </div>
+                    <p></p>
+                    <form action="">
                         <button type="submit" onclick="messageConsultaEnviada()" class="btn btn-primary btn-lg" name="btnEnviar" id="submit-form">Enviar</button>
-                      </form>
+                    </form>
                         
-                      
-                  </form>
-                  <br></br>
+                    
+                    </form>
+                    <br></br>
             </div>
 
             <div class="footer">

@@ -9,7 +9,9 @@
     text-align: center;
 } 
 
-
+#super_login{
+    display: flex;
+}
 
 ul {
     list-style-type: none;

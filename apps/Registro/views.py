@@ -1,6 +1,10 @@
 from django.shortcuts import redirect, render
 from .models import Cliente
 from .forms import ClienteForm
+# las importaciones para la API 
+from rest_framework import generics
+from .serializers import ClienteSerializer
+
 
 def listar_clientes(request):
     clientes = Cliente.objects.all()
@@ -47,3 +51,11 @@ def editar_cliente(request, cliente_id):
 
     # Si llegamos al final renderizamos el formulario
     return render(request, "Registro/editar_cliente.html", {'form': form})
+
+class API_objects(generics.ListCreateAPIView):
+    queryset = Cliente.objects.all()
+    serializer_class = ClienteSerializer
+    
+class API_objects_details(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Cliente.objects.all()
+    serializer_class = ClienteSerializer

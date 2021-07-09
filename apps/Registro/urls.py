@@ -1,5 +1,7 @@
 from django.urls import path, include
 from . import views
+from rest_framework.urlpatterns import format_suffix_patterns
+from apps.Registro import views
 
 urlpatterns = [
 
@@ -15,4 +17,11 @@ urlpatterns = [
     # borrar una cliente
     path('borrar_cliente/<int:cliente_id>', views.borrar_cliente, name="borrar_cliente"),
 
+    path('api/', views.API_objects.as_view()),
+    path('api/<int:pk>/', views.API_objects_details.as_view()),
+
+
+
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)
